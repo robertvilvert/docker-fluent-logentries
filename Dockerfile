@@ -8,8 +8,8 @@ WORKDIR /etc/td-agent/
 COPY ./conf/td-agent.conf /etc/td-agent/
 COPY ./conf/kubernetes.conf /etc/td-agent/
 COPY ./conf/logentries-tokens.conf /etc/td-agent/
-COPY ./conf/secret_ca_file /etc/td-agent/
-COPY ./conf/secret_token /etc/td-agent/
+#COPY ./conf/secret_ca_file /etc/td-agent/
+
 
 # Copy plugins
 COPY plugin /etc/td-agent/plugin/
