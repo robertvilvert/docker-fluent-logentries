@@ -32,11 +32,11 @@ spec:
                 name: logentries
                 key: TOKEN
           -
-            name: CLUSTER_NAME
+            name: CA_CERT
             valueFrom:
               secretKeyRef:
-                name: clusterinfo
-                key: CLUSTER_NAME
+                name: fluentd-rd-secret
+                key: ca.crt
         resources:
           limits:
             memory: 200Mi
