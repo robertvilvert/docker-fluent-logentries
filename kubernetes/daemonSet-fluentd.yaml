@@ -23,7 +23,7 @@ spec:
         effect: NoSchedule
       containers:
       - name: fluentd
-        image: robertvilvert/fluentd:4.0.0
+        image: robertvilvert/fluentd:4.0.1
         env:
           -
             name: TOKEN
