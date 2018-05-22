@@ -39,10 +39,11 @@ spec:
                 key: ca.crt
         resources:
           limits:
-            memory: 200Mi
+            cpu: "1.5"
+            memory: 720Mi
           requests:
-            cpu: 100m
-            memory: 200Mi
+            cpu: "1.5"
+            memory: 720Mi
         volumeMounts:
         - name: varlog
           mountPath: /var/log
