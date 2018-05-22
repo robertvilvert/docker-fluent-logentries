@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: DaemonSet
 metadata:
   name: fluentd-rd
-  namespace: kube-system
+  namespace: rdsm
   labels:
     k8s-app: fluentd-rd
     version: v2.0.1
@@ -39,11 +39,11 @@ spec:
                 key: ca.crt
         resources:
           limits:
-            cpu: "1.5"
-            memory: 720Mi
+            cpu: 2            
+            memory: 2048Mi
           requests:
-            cpu: "1.5"
-            memory: 720Mi
+            cpu: 2
+            memory: 2048Mi
         volumeMounts:
         - name: varlog
           mountPath: /var/log

@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  TOKEN: YTFiNGRmOWItZWNiOC00OGMyLWI1MmYtNDJiNGJkNDBhYmJm
+kind: Secret
+metadata:
+  name: logentries
+  namespace: rdsm
+type: Opaque
